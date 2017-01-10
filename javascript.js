@@ -1,5 +1,5 @@
 function validateTcId(id) {
-    if (!id || parseInt(id.charAt(1)) === 0 || id.length !== 11) {
+    if (!id || parseInt(id.charAt(0)) === 0 || id.length !== 11) {
         return false;
     }
     var numbers = id.split('');
